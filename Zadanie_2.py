@@ -2,7 +2,6 @@
 
 """Funkcja do obliczania sześcianu sumy n liczb"""
 
-
 def qube_sum():
     wynik = 0
     number = int(input('Podaj liczbę :'))
@@ -11,3 +10,14 @@ def qube_sum():
     print(wynik)
 
 qube_sum()
+
+#Pomysł drugi. A raczej pierwszy(gorszy)
+
+def qube_sum2():
+    number = int(input('Podaj liczbę :'))
+    lista = []
+    for x in range(1, number+1):
+        lista.append(x**3)
+    print(sum(lista))
+
+qube_sum2()
