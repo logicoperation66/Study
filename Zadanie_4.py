@@ -21,6 +21,16 @@ def printing_duplicates():
         if leter.count(digit) >= 2:
             print(digit)
 
-
-
 printing_duplicates()
+
+# Pomysł drugi po doedukowaniu się w internecie
+
+def printing_duplicates2():
+    text = input('Wpisz ciąg znaków :')
+    duplicates = set()
+    for digit in text:
+      if text.count(digit) > 1:
+        duplicates.add(digit)
+    print(duplicates)
+
+printing_duplicates2()
