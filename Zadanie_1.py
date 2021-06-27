@@ -5,6 +5,9 @@ poprawności wprowadzonych danych"""
 
 
 def tax():
+    prompt = """Prosta aplikacja do liczenia należnego podatku z funkcją sprawdzania
+poprawności wprowadzonych danych"""
+
     pr1 = 3091
     pr2 = 85528
     st1 = 0.18
@@ -22,13 +25,10 @@ def tax():
             break
 
     if pr1 < bejmy < pr2:
-        ciezar = st1*(bejmy-pr1)
+        ciezar = st1 * (bejmy - pr1)
         print(f"Musisz odprowadzić {round(ciezar, 2)} zł podatku")
     elif bejmy > pr2:
-        ciezar2 = st1*(pr2-pr1)+st2*(bejmy-pr2)
+        ciezar2 = st1 * (pr2 - pr1) + st2 * (bejmy - pr2)
         print(f"Musisz odprowadzić {round(ciezar2, 2)} zł podatku")
     else:
         print('Jesteś zwolniony z podatku "szczęsciarzu"')
-
-
-tax()
